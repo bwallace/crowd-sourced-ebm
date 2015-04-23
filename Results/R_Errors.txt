@@ -1,6 +1,0 @@
-Odd processing error for numeric questions
-------------------------------------------
-
-If a question regards, e.g., that there should be at least 10 patients in a study.. a number of 1008 will then in ddply be regarded as not being more than 10.. For some reason?? Change it to 1108 and everything works fine.. Run as.numeric(1008) >= 10 and everything is fine.. The reason is likely due to ddply. Be aware our summary scripts may give odd results in these cases, so be sceptical.
-
-Appendicitis aID 264 Q2: 1008 (changed temporarily in file)
